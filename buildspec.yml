@@ -8,6 +8,7 @@ phases:
     commands:
       - pip install pipenv
       - pipenv install
+      - python -m unittest 
   post_build:
     commands:
       - echo Build completed on `date`
