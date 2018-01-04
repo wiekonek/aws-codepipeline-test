@@ -4,10 +4,12 @@ phases:
   pre_build:
     commands:
       - echo "Hello from my pipeline"
+      - pip install pipenv
   build:
     commands:
-      - pip install pipenv
+      - echo "Installing dependencies"
       - pipenv install
+      - echo "Testing"
       - python -m unittest 
   post_build:
     commands:
