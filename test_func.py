@@ -5,4 +5,4 @@ from app import string_ccat
 class Testing(unittest.TestCase):
 
     def test_concat(self):
-        self.assertEqual(string_ccat("a", "b"), "ola")
+        self.assertEqual(string_ccat("o", "la"), "ola")
